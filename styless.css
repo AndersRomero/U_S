@@ -1,0 +1,257 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f2f2f3;
+}
+
+.carousel-slide {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Submenú ancho como megamenú */
+.dropdown-menu-wide {
+  min-width: 100%;
+}
+
+/* Mejora visual para submenú */
+.dropdown-menu a.dropdown-item {
+  font-size: 15px;
+  padding-left: 0;
+  padding-bottom: 1px;
+  color: #d3b820;
+  transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.dropdown-menu a.dropdown-item:hover {
+  color: #003366;
+  background-color: #f2f2f3;
+  font-size: 1.1rem;
+}
+
+.nav-item {
+  padding-left: px;
+  padding-right: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease,
+    font-size 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #003366;
+  border-color: #003366;
+  font-size: 1.1rem;
+}
+
+.text-primary {
+  color: #003366 !important;
+}
+
+.text-danger {
+  color: #7a1717 !important;
+}
+
+.nav-item a.nav-link {
+  color: #000000 !important;
+}
+
+.dropdown-menu {
+  background-color: #f2f2f3;
+}
+
+
+.btn-row-wrapper {
+  background-color: #f2f2f3;
+  padding: 1rem;
+}
+
+.btn.btn-light {
+  background-color: #f2f2f3;
+  color: #555;
+  border: none;
+  box-shadow: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn.btn-light:hover {
+  background-color: #e6e6e7;
+  color: #003366;
+}
+
+/* CARDS */
+
+/* Fondo mitad blanco, mitad azul */
+.bg-split {
+  background: linear-gradient(to bottom, white 50%, #004080 50%);
+}
+
+/* Tarjeta moderna con sombra, borde y transición */
+.card {
+  border-radius: 16px;
+  border: none;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.card:hover {
+  background-color: #f5f5f5;
+}
+
+/* Imagen redondeada arriba */
+.card-img-top {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  object-fit: cover;
+  height: 200px;
+}
+
+/* Footer plano y limpio */
+.card-footer {
+  background-color: white;
+  border-top: none;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/* Botón estilizado */
+.card .btn-outline-warning {
+  padding: 10px 20px;
+  transition: background-color 0.3s ease-in-out, font-size 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+}
+
+.card .btn-outline-warning:hover {
+  background-color: #e9cc28;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.card .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #003366;
+}
+
+.btn.btn-warning {
+  background-color: #d3b820;
+  color: #ffffff;
+  border: none;
+  box-shadow: none;
+  transition: background-color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease, transform 0.3s ease;
+}
+
+.btn.btn-warning:hover {
+  background-color: #003366 !important;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+
+/* Sección experiencia */
+.seccion-experiencia {
+  background-color: #f2f2f3;
+  position: relative;
+  z-index: 1;
+}
+
+/* Texto izquierdo */
+.experiencia-etiqueta {
+  color: #6c757d;
+  letter-spacing: 1px;
+}
+
+.experiencia-titulo {
+  color: #004080;
+}
+
+.experiencia-texto {
+  color: #444;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+footer.footer {
+  background-color: #003366;
+}
+
+footer .text-warning {
+  color: #f4ea2a !important;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer hr {
+  opacity: 0.2;
+  border-top: 1px solid #eee;
+}
+
+.bg-primary {
+  background-color: #003366 !important;
+}
+
+.bg-warning {
+  background-color: #d3b820;
+}
+
+.info-box {
+  background-color: #f2f2f3;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-box h3 {
+  color: #d3b820;
+  margin-bottom: 10px;
+}
+
+.text-warning {
+  color: #d3b820 !important;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.card-modal {
+  border-radius: 16px;
+  border: none;
+  overflow: hidden;
+  transition: transform 0.3s ease, shadow 0.3s ease;
+}
+
+.card-modal:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #004080, #0074d9);
+}
+
+.modal-content {
+  transition: transform 0.3s ease;
+}
+
+.modal.fade.show .modal-dialog {
+  transform: translateY(-5px);
+}
+
+.modal-body {
+  text-align: justify;
+}
+
+.accordion-button {
+  font-weight: 600;
+  color: #004080;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #e7f1ff;
+  color: #004080;
+}
