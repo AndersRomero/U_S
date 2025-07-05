@@ -1,20 +1,44 @@
+<!--
+=========================================================
+* © 2024 UNISANGIL
+=========================================================
+-->
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
+    <!-- METADATOS: Configuración básica del documento HTML -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultorio Tecnológico | UNISANGIL</title>
+
+    <!-- ESTILOS: Enlaces a hojas de estilo CSS externas -->
+    <!-- Bootstrap: Framework CSS para diseño responsivo -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome: Librería de iconos y herramientas CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <!-- Fuentes de Google: Fuentes personalizadas para el diseño -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS Personalizado: Estilos específicos del proyecto -->
     <link href="styless.css" rel="stylesheet">
+    <!-- AOS (Animate On Scroll): Librería para animaciones al hacer scroll -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <!-- Animate.css: Librería para animaciones CSS predefinidas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
+    <!-- ENLACE DE INICIO: Ancla para navegación interna -->
     <a id="inicio"></a>
+
+    <!-- Overlay del robot con animación de entrada y salida al hacer clic -->
+    <div id="robotOverlay" class="robot-overlay animate__animated">
+        <img src="robot.png" alt="Robot">
+    </div>
+
+    <!-- ENCABEZADO: Contiene la barra superior y la barra de navegación principal -->
     <header class="sticky-top animate__animated animate__fadeInDown animate__faster ">
+        <!-- BARRA SUPERIOR DE ENLACES DE ACCESO RÁPIDO -->
         <div class="bg-white text-end py-2 px-5 small border-bottom d-none d-lg-block fw-semibold">
             <a href="#" class="text-danger me-3 text-decoration-none">Aspirante</a>
             <a href="#" class="text-danger me-3 text-decoration-none">Estudiante</a>
@@ -22,17 +46,22 @@
             <a href="#" class="text-danger me-5 text-decoration-none">Empleados</a>
         </div>
 
+        <!-- BARRA DE NAVEGACIÓN PRINCIPAL -->
         <nav class="navbar navbar-expand-lg bg-light shadow-sm">
             <div class="container-fluid">
+                <!-- LOGO DE LA UNIVERSIDAD -->
                 <a class="navbar-brand" href="index.html">
                     <img src="https://unisangil.edu.co/wp-content/uploads/2023/06/logo_unisangil_2023_web.png"
                         alt="UNISANGIL" class="img-fluid" style="max-height: 90px; margin-left: 80px;">
                 </a>
+                <!-- BOTÓN DE MENÚ PARA DISPOSITIVOS MÓVILES -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- MENÚ DE NAVEGACIÓN COLAPSABLE -->
                 <div class="collapse navbar-collapse" id="navbarMenu">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg">
+                        <!-- MENÚ DESPLEGABLE "FORMACIÓN" -->
                         <li class="nav-item dropdown position-static ">
                             <a class="nav-link dropdown-toggle fw-semibold" href="#" id="formacionDropdown"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -42,6 +71,7 @@
                                 style="top: 100%;">
                                 <div class="container p-4">
                                     <div class="row">
+                                        <!-- ENLACES DE PREGRADO -->
                                         <div class="col-md-3">
                                             <h6 class="text-primary fw-bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pregrado</h6>
                                             <ul class="list-unstyled">
@@ -59,6 +89,7 @@
                                                         UNAB</a></li>
                                             </ul>
                                         </div>
+                                        <!-- ENLACES DE POSGRADO -->
                                         <div class="col-md-3">
                                             <h6 class="text-primary fw-bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Posgrado</h6>
                                             <ul class="list-unstyled">
@@ -73,6 +104,7 @@
                                                         Chiquinquirá</a></li>
                                             </ul>
                                         </div>
+                                        <!-- ENLACES DE TÉCNICO -->
                                         <div class="col-md-3">
                                             <h6 class="text-primary fw-bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Técnico</h6>
                                             <ul class="list-unstyled">
@@ -81,6 +113,7 @@
                                                         laboral</a></li>
                                             </ul>
                                         </div>
+                                        <!-- ENLACES DE EDUCACIÓN CONTINUA -->
                                         <div class="col-md-3">
                                             <h6 class="text-primary fw-bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Educación
                                                 Continua</h6>
@@ -94,10 +127,12 @@
                                 </div>
                             </div>
                         </li>
+                        <!-- ENLACES DE NAVEGACIÓN PRINCIPALES -->
                         <li class="nav-item fw-semibold"><a class="nav-link" href="#">Admisiones</a></li>
                         <li class="nav-item fw-semibold"><a class="nav-link" href="#">Investigación</a></li>
                         <li class="nav-item fw-semibold"><a class="nav-link" href="#">Extensión</a></li>
                         <li class="nav-item fw-semibold"><a class="nav-link" href="#">Bienestar</a></li>
+                        <!-- MENÚ DESPLEGABLE "NOSOTROS" -->
                         <li class="nav-item dropdown position-static fw-semibold">
                             <a class="nav-link dropdown-toggle" href="#" id="formacionDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -106,6 +141,7 @@
                             <div class="dropdown-menu w-100 mt-0 border-0 shadow-lg" style="top: 100%;">
                                 <div class="container p-3">
                                     <div class="row">
+                                        <!-- ENLACES INSTITUCIONALES -->
                                         <div class="col-12 col-sm-6 col-md-3">
                                             <h6 class="text-primary fw-semibold">Institucional</h6>
                                             <ul class="list-unstyled">
@@ -132,6 +168,7 @@
                                                         pecuniarios - Matrículas</a></li>
                                             </ul>
                                         </div>
+                                        <!-- ENLACES DE ACADEMIA -->
                                         <div class="col-12 col-sm-6 col-md-3">
                                             <h6 class="text-primary fw-semibold">Academia</h6>
                                             <ul class="list-unstyled">
@@ -146,6 +183,7 @@
                                                         Biblioteca y<br>Aprendizaje Virtual</a></li>
                                             </ul>
                                         </div>
+                                        <!-- ENLACES ADMINISTRATIVOS -->
                                         <div class="col-12 col-sm-6 col-md-3">
                                             <h6 class="text-primary fw-semibold">Administrativo</h6>
                                             <ul class="list-unstyled">
@@ -160,6 +198,7 @@
                                                         Interno de<br>Aseguramiento de la Calidad</a></li>
                                             </ul>
                                         </div>
+                                        <!-- ENLACES DE CENTROS ESPECIALES -->
                                         <div class="col-12 col-sm-6 col-md-3">
                                             <h6 class="text-primary fw-semibold">Centros especiales</h6>
                                             <ul class="list-unstyled">
@@ -187,6 +226,7 @@
                                 </div>
                             </div>
                         </li>
+                        <!-- ICONO DE BÚSQUEDA -->
                         <li class="nav-item fw-semibold "><a class="nav-link" href="#"><i
                                     class="fa-solid fa-magnifying-glass fa-beat-fade fa-xl"></i></a></li>
                     </ul>
@@ -196,6 +236,7 @@
         </nav>
     </header>
 
+    <!-- SECCIÓN HERO: Banner principal con imagen de fondo y título. -->
     <section class="position-relative">
         <img src="https://cdn.pixabay.com/photo/2023/09/28/07/25/technology-8280863_1280.jpg"
             alt="Consultorio Tecnológico" class="img-fluid w-100"
@@ -206,10 +247,12 @@
         </div>
     </section>
 
+    <!-- SECCIÓN MISIÓN Y VISIÓN: Presenta la misión y visión del consultorio. -->
     <section class="py-5">
         <div class="container">
-            <!-- Misión y Visión -->
+            <!-- TÍTULO DE LA SECCIÓN -->
             <div class="row mb-5 g-4 justify-content-center">
+                <!-- TARJETA DE MISIÓN -->
                 <div class="col-12 col-md-6 col-lg-5">
                     <div class="card text-center shadow-sm h-100 card-modal" role="button" data-bs-toggle="modal"
                         data-bs-target="#modalMision" data-aos="fade-right">
@@ -220,6 +263,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- TARJETA DE VISIÓN -->
                 <div class="col-12 col-md-6 col-lg-5">
                     <div class="card text-center shadow-sm h-100 card-modal" role="button" data-bs-toggle="modal"
                         data-bs-target="#modalVision" data-aos="fade-left">
@@ -234,6 +278,7 @@
         </div>
     </section>
 
+    <!-- SECCIÓN DESCRIPTIVA: Información general sobre el catálogo y portafolio de servicios. -->
     <section class="bg-primary text-white py-5">
         <div class="container">
             <h2 class="text-center mb-4 fw-semibold text-warning" data-aos="fade-in">Catálogo de Tecnología y Portafolio
@@ -249,13 +294,14 @@
         </div>
     </section>
 
+    <!-- SECCIÓN CATÁLOGO Y PORTAFOLIO: Detalle de los servicios y tecnologías ofrecidas. -->
     <section class="py-5">
         <div class="container">
             <h2 class="text-center fw-bold text-primary mb-5" data-aos="fade_down">Catálogo y Portafolio del Consultorio
             </h2>
             <div class="row g-4">
 
-                <!-- Catálogo -->
+                <!-- COLUMNA CATÁLOGO: Lista de equipos y software disponibles. -->
                 <div class="col-md-6" data-aos="fade-right">
                     <div class="card shadow-sm h-100">
                         <div class="card-header bg-warning fw-bold fs-5 text-white text-center">
@@ -263,7 +309,7 @@
                         </div>
                         <div class="card-body">
                             <div class="accordion" id="catalogoAccordion">
-                                <!-- Equipos -->
+                                <!-- ACORDEÓN EQUIPOS INFORMÁTICOS -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="equiposHeading">
                                         <button class="accordion-button collapsed" type="button"
@@ -417,9 +463,7 @@
                                     </div>
                                 </div>
 
-                                <!-- Software -->
-
-                                <!-- Software y Plataformas -->
+                                <!-- ACORDEÓN SOFTWARE Y PLATAFORMAS -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="softwareHeading">
                                         <button class="accordion-button collapsed" type="button"
@@ -522,7 +566,7 @@
                                     </div>
                                 </div>
 
-                                <!-- Redes y Conectividad -->
+                                <!-- ACORDEÓN REDES Y CONECTIVIDAD -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="redesHeading">
                                         <button class="accordion-button collapsed" type="button"
@@ -599,7 +643,7 @@
                     </div>
                 </div>
 
-                <!-- Portafolio -->
+                <!-- COLUMNA PORTAFOLIO: Detalle de los servicios ofrecidos. -->
                 <div class="col-md-6" data-aos="fade-left">
                     <div class="card shadow-sm h-100">
                         <div class="card-header bg-warning fw-bold fs-5 text-white text-center">
@@ -608,7 +652,7 @@
                         <div class="card-body">
                             <div class="accordion" id="portafolioAccordion">
 
-                                <!-- Para la Comunidad Regional -->
+                                <!-- ACORDEÓN PARA LA COMUNIDAD REGIONAL -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="comunidadHeading">
                                         <button class="accordion-button collapsed" type="button"
@@ -708,7 +752,7 @@
                                     </div>
                                 </div>
 
-                                <!-- Para Estudiantes -->
+                                <!-- ACORDEÓN PARA ESTUDIANTES -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="estudiantesHeading">
                                         <button class="accordion-button collapsed" type="button"
@@ -858,23 +902,13 @@
                 </div>
             </div>
         </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-
-        </div>
-        </div>
     </section>
 
-
-    </div>
-
+    <!-- PIE DE PÁGINA: Contiene información de contacto, enlaces rápidos y redes sociales. -->
     <footer class="footer text-white pt-5 pb-4" data-aos="fade-up">
         <div class="container">
             <div class="row">
-                <!-- Logo y descripción -->
+                <!-- INFORMACIÓN DE CONTACTO -->
                 <div class="col-md-4 mb-4">
                     <h5 class="text-warning mb-3">CONTACTOS</h5>
                     <p class="small mb-3">
@@ -895,7 +929,7 @@
                     </p>
                 </div>
 
-                <!-- Enlaces rápidos -->
+                <!-- ENLACES RÁPIDOS DEL PIE DE PÁGINA -->
                 <div class="col-md-4 mb-4">
                     <h5 class="text-warning">Enlaces rápidos</h5>
                     <ul class="list-unstyled">
@@ -916,7 +950,7 @@
                     </ul>
                 </div>
 
-                <!-- Contacto y redes sociales -->
+                <!-- REDES SOCIALES Y CONTACTO ADICIONAL -->
                 <div class="col-md-4 mb-4 px-5">
                     <h5 class="text-warning">Redes sociales</h5>
                     <a href="#" class="text-white fs-4"><i class="fab fa-facebook-f"></i></a>
@@ -937,99 +971,128 @@
 
         <hr class="border-light" />
 
-        <!-- Derechos -->
+        <!-- DERECHOS DE AUTOR -->
         <div class="text-center small">
             &copy; <span id="year"></span> UNISANGIL. Todos los derechos reservados.
         </div>
-        </div>
     </footer>
 
+    <!-- MODALES: Ventanas emergentes para Misión y Visión. -->
+    <!-- MODAL VISIÓN -->
+    <div class="modal fade" id="modalVision" tabindex="-1" aria-labelledby="modalVisionLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+
+                <!-- ENCABEZADO DEL MODAL -->
+                <div class="modal-header bg-gradient-primary text-white py-3 px-4">
+                    <h5 class="modal-title fw-bold" id="modalVisionLabel">Nuestra Visión</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+
+                <!-- CUERPO DEL MODAL -->
+                <div class="modal-body px-5 pt-4" style="line-height: 1.8; font-size: 1.05rem; ">
+                    <p>
+                        Para el año 2030, el Consultorio Tecnológico de La Fundación Universitaria de San Gil -
+                        Unisangil
+                        sede Chiquinquirá será un referente regional en
+                        la prestación de servicios tecnológicos universitarios, reconocido por su contribución a la
+                        transformación digital de Chiquinquirá y los municipios
+                        aledaños.
+                    </p>
+                    <p>
+                        Actuará como un puente entre la universidad, el sector productivo y la comunidad, fortaleciendo
+                        la
+                        formación integral de los estudiantes,
+                        apoyando el crecimiento de las empresas locales y promoviendo una cultura de innovación,
+                        seguridad
+                        digital y acceso equitativo a las tecnologías
+                        de la información y la comunicación, como motor del desarrollo económico, académico y social de
+                        la
+                        región.
+                    </p>
+                </div>
+
+                <!-- PIE DEL MODAL -->
+                <div class="modal-footer border-top-0 px-4 pb-3 justify-content-center">
+                    <button type="button" class="btn btn-outline-primary fw-semibold px-4" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL MISIÓN -->
+    <div class="modal fade" id="modalMision" tabindex="-1" aria-labelledby="modalMisionLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+
+                <!-- ENCABEZADO DEL MODAL -->
+                <div class="modal-header bg-gradient-primary text-white py-3 px-4">
+                    <h5 class="modal-title fw-bold" id="modalVisionLabel">Nuestra Mision</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+
+                <!-- CUERPO DEL MODAL -->
+                <div class="modal-body px-5 pt-4" style="line-height: 1.8; font-size: 1.05rem; ">
+                    <p>
+                        El Consultorio Tecnológico de Unisangil sede Chiquinquirá tiene como misión diseñar y ofrecer
+                        soluciones tecnológicas adaptadas a las
+                        necesidades de la comunidad universitaria y del entorno empresarial local, con el propósito de
+                        impulsar su competitividad y eficiencia.
+                    </p>
+                    <p>
+                        A través de un equipo académico y técnico integral y comprometido, promovemos el uso estratégico
+                        de
+                        la tecnología y creamos una red de conocimiento y aprendizaje
+                        que permita a los usuarios incorporar herramientas digitales de manera efectiva en sus procesos
+                        formativos, organizacionales y productivos,
+                        generando un impacto positivo en el desarrollo de la región.
+                    </p>
+                </div>
+
+                <!-- PIE DEL MODAL -->
+                <div class="modal-footer border-top-0 px-4 pb-3 justify-content-center">
+                    <button type="button" class="btn btn-outline-primary fw-semibold px-4" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS JS: Enlaces a archivos JavaScript y scripts personalizados. -->
+    <!-- Bootstrap Bundle con Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS (Animate On Scroll) -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Inicializar AOS
+        AOS.init();
+    </script>
+    <!-- Botpress Webchat -->
+    <script src="connection.js"></script>
+    <script src="chatbot.js"></script>
+    <!-- Script para la animación y ocultamiento del robot -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const robot = document.getElementById('robotOverlay');
+            robot.classList.add('animate__fadeInUp');
+
+            robot.addEventListener('click', function () {
+                robot.classList.remove('animate__fadeInUp');
+                robot.classList.add('animate__fadeOutDown');
+                robot.addEventListener('animationend', () => {
+                    robot.classList.add('hidden');
+                }, { once: true });
+            });
+        });
+    </script>
+
+
+
 </body>
 
-<div class="modal fade" id="modalVision" tabindex="-1" aria-labelledby="modalVisionLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
-
-            <!-- Encabezado -->
-            <div class="modal-header bg-gradient-primary text-white py-3 px-4">
-                <h5 class="modal-title fw-bold" id="modalVisionLabel">Nuestra Visión</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                    aria-label="Cerrar"></button>
-            </div>
-
-            <!-- Cuerpo -->
-            <div class="modal-body px-5 pt-4" style="line-height: 1.8; font-size: 1.05rem; ">
-                <p>
-                    Para el año 2030, el Consultorio Tecnológico de La Fundación Universitaria de San Gil - Unisangil
-                    sede Chiquinquirá será un referente regional en
-                    la prestación de servicios tecnológicos universitarios, reconocido por su contribución a la
-                    transformación digital de Chiquinquirá y los municipios
-                    aledaños.
-                </p>
-                <p>
-                    Actuará como un puente entre la universidad, el sector productivo y la comunidad, fortaleciendo la
-                    formación integral de los estudiantes,
-                    apoyando el crecimiento de las empresas locales y promoviendo una cultura de innovación, seguridad
-                    digital y acceso equitativo a las tecnologías
-                    de la información y la comunicación, como motor del desarrollo económico, académico y social de la
-                    región.
-                </p>
-            </div>
-
-            <!-- Pie -->
-            <div class="modal-footer border-top-0 px-4 pb-3 justify-content-center">
-                <button type="button" class="btn btn-outline-primary fw-semibold px-4" data-bs-dismiss="modal">
-                    Cerrar
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="modalMision" tabindex="-1" aria-labelledby="modalMisionLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
-
-            <!-- Encabezado -->
-            <div class="modal-header bg-gradient-primary text-white py-3 px-4">
-                <h5 class="modal-title fw-bold" id="modalVisionLabel">Nuestra Mision</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                    aria-label="Cerrar"></button>
-            </div>
-
-            <!-- Cuerpo -->
-            <div class="modal-body px-5 pt-4" style="line-height: 1.8; font-size: 1.05rem; ">
-                <p>
-                    El Consultorio Tecnológico de Unisangil sede Chiquinquirá tiene como misión diseñar y ofrecer
-                    soluciones tecnológicas adaptadas a las
-                    necesidades de la comunidad universitaria y del entorno empresarial local, con el propósito de
-                    impulsar su competitividad y eficiencia.
-                </p>
-                <p>
-                    A través de un equipo académico y técnico integral y comprometido, promovemos el uso estratégico de
-                    la tecnología y creamos una red de conocimiento y aprendizaje
-                    que permita a los usuarios incorporar herramientas digitales de manera efectiva en sus procesos
-                    formativos, organizacionales y productivos,
-                    generando un impacto positivo en el desarrollo de la región.
-                </p>
-            </div>
-
-            <!-- Pie -->
-            <div class="modal-footer border-top-0 px-4 pb-3 justify-content-center">
-                <button type="button" class="btn btn-outline-primary fw-semibold px-4" data-bs-dismiss="modal">
-                    Cerrar
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
 </html>
-
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
-
-<script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js"></script>
-<script src="https://files.bpcontent.cloud/2025/06/29/21/20250629215545-OBJUYJ6L.js"></script>
